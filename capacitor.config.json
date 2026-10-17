@@ -1,8 +1,13 @@
 {
-  "appId": "com.nargil.sim",
-  "appName": "Nargil Missile Sim",
+  "appId": "com.nargil.strikesim",
+  "appName": "Nargil Strike Sim",
   "webDir": "www",
   "android": {
     "backgroundColor": "#050a10"
+  },
+  "plugins": {
+    "ScreenOrientation": {
+      "orientation": "landscape"
+    }
   }
 }
