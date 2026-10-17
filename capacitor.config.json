@@ -1,0 +1,8 @@
+{
+  "appId": "com.nargil.coconutmissile",
+  "appName": "پرتاب موشک نارگیل",
+  "webDir": "www",
+  "android": {
+    "backgroundColor": "#0a0520"
+  }
+}
