@@ -4,16 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <meta name="theme-color" content="#050a10">
-  <title>Nargil Missile Sim</title>
+  <title>Nargil Strike Sim</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <canvas id="gameCanvas"></canvas>
 
   <div id="hud">
-    <div class="hud-box"><span>Score</span><b id="score">0</b></div>
-    <div class="hud-box"><span>Lives</span><b id="lives">3</b></div>
-    <div class="hud-box env-box" id="envLabel">☀️ Day</div>
+    <div class="hud-box"><span>MISSION</span><b id="score">0</b></div>
+    <div class="hud-box"><span>LIVES</span><b id="lives">3</b></div>
+    <div class="hud-box env-box" id="status">READY</div>
   </div>
 
   <div id="crosshair">
@@ -21,30 +21,31 @@
     <div class="ch-v"></div>
   </div>
 
-  <div id="targetLock" class="hidden">🔒</div>
+  <div id="targetMarker" class="hidden">⌖</div>
+  <div id="lockText" class="hidden">TARGET LOCKED</div>
 
   <div id="fireBtn">🚀</div>
 
   <div id="menu" class="overlay">
     <div class="menu-box">
-      <h1>🚀 NARGIL</h1>
-      <p>Tactical Missile Simulator</p>
+      <h1>NARGIL STRIKE</h1>
+      <p>Tactical Missile Strike Simulator</p>
       <div class="hint">
-        👆 Drag to aim<br>
-        🎯 Tap 🚀 to lock & fire<br>
-        🌍 Environments change automatically
+        👆 Tap the city to designate a target<br>
+        🎯 Press 🚀 to launch the Nargil missile<br>
+        ⚙️ Real-time 3-DOF physics & PN guidance
       </div>
-      <button id="startBtn">START MISSION</button>
+      <button id="startBtn">BEGIN MISSION</button>
       <div class="record">🏆 Best: <span id="bestScore">0</span></div>
     </div>
   </div>
 
   <div id="gameOver" class="overlay hidden">
     <div class="menu-box">
-      <h1 style="color:#ff5566">💥 MISSION FAILED</h1>
+      <h1 style="color:#ff5566">MISSION ENDED</h1>
       <p>Score: <b id="finalScore">0</b></p>
       <p>Best: <b id="finalBest">0</b></p>
-      <button id="restartBtn">RETRY</button>
+      <button id="restartBtn">REDEPLOY</button>
     </div>
   </div>
 
