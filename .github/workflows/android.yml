@@ -1,4 +1,4 @@
-name: Build Nargil Missile Sim APK
+name: Build Nargil Strike Sim APK
 
 on:
   push:
@@ -43,6 +43,6 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
-          name: nargil-missile-sim-apk
+          name: nargil-strike-sim-apk
           path: android/app/build/outputs/apk/debug/app-debug.apk
           retention-days: 30
