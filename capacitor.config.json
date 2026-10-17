@@ -1,8 +1,8 @@
 {
-  "appId": "com.nargil.coconutmissile",
-  "appName": "پرتاب موشک نارگیل",
+  "appId": "com.nargil.sim",
+  "appName": "Nargil Missile Sim",
   "webDir": "www",
   "android": {
-    "backgroundColor": "#0a0520"
+    "backgroundColor": "#050a10"
   }
 }
