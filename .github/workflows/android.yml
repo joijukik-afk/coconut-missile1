@@ -24,8 +24,12 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
+      # 🔑 این مرحله اصلاح شده است
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
+        with:
+          packages: ''                        # پکیج tools حذف شده است
+          accept-android-sdk-licenses: true   # پذیرش خودکار مجوزها
 
       - name: Install dependencies
         run: npm install
